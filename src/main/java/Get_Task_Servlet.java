@@ -42,6 +42,7 @@ public class Get_Task_Servlet extends HttpServlet {
             res.getWriter().write("{\"error\": \"" + e.getMessage() + "\"}");
             e.printStackTrace();
         }
+
     }
 }
 
