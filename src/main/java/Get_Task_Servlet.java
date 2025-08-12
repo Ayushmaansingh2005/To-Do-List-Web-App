@@ -37,6 +37,7 @@ public class Get_Task_Servlet extends HttpServlet {
                 res.getWriter().write(tasks.toString());
             }
 
+
         } catch (Exception e) {
             res.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             res.getWriter().write("{\"error\": \"" + e.getMessage() + "\"}");
