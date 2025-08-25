@@ -47,6 +47,7 @@ public class TaskEditServlet extends HttpServlet {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
 
+
             String query = "UPDATE tasks SET content = ?, due_date = ?, priority = ? WHERE id = ?";
 
             try (Connection conn = DriverManager.getConnection(url, username, dbPassword);
