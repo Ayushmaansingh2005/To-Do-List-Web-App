@@ -45,6 +45,7 @@ public class TaskEditServlet extends HttpServlet {
             if ("".equals(dueDate)) dueDate = null;
             if ("".equals(priority)) priority = null;
 
+
             Class.forName("com.mysql.cj.jdbc.Driver");
 
 
