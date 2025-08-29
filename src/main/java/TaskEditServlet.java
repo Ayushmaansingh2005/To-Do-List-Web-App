@@ -43,6 +43,7 @@ public class TaskEditServlet extends HttpServlet {
             String dueDate = json.optString("dueDate", null);
             String priority = json.optString("priority", null);
             if ("".equals(dueDate)) dueDate = null;
+
             if ("".equals(priority)) priority = null;
 
 
